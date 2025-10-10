@@ -10,6 +10,7 @@ public class Rod_Cutting {
         int rodLength = 8;
 
         System.out.println("Maximum value obtainable: " + rodCutting(length, price, rodLength));
+        System.out.println("Using 1D Dp Array: " + rodCutting2(length, price, rodLength));
     }
 
     public static int rodCutting(int[] length, int[] price, int rodLength){
@@ -27,6 +28,35 @@ public class Rod_Cutting {
                 }
             }
         }
+        System.out.println("2D array DP:");
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                System.out.print(dp[i][j] + "   ");
+            }
+            System.out.println();
+        }
         return dp[length.length][rodLength];
+    }
+
+    //Taking only 1D - Array in DP
+    public static int rodCutting2(int[] length, int[] price, int rodLength){
+        int dp[] = new int[rodLength + 1];
+        dp[0] = 0; //Initialization
+
+        // j -> different lengths having different prices given
+        // i -> current rodLengths allowed
+        for (int i = 1; i < dp.length; i++) {       //Capacity loop
+            for (int j = 0; j < length.length; j++) {       //Items loop
+                if(length[j] <= i){
+                    dp[i] = Math.max(dp[i], price[j] + dp[i-length[j]]);
+                }
+            }
+        }
+        System.out.println("1D Array DP: ");
+        for (int i = 0; i < dp.length; i++) {
+            System.out.print(dp[i] + "   ");
+        }
+        System.out.println();
+        return dp[rodLength];
     }
 }
