@@ -1,7 +1,7 @@
 public class Longest_Common_Subsequence {
     public static void main(String[] args) {
-        String str1 = "abcdge";
-        String str2 = "abedg";
+        String str1 = "intention";
+        String str2 = "execution";
         longestCommonSubsequence(str1, str2);
     }
     public static void longestCommonSubsequence(String text1, String text2) {
