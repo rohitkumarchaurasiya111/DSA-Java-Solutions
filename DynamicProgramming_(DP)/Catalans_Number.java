@@ -1,6 +1,9 @@
+//Catalan numbers count the number of distinct ways to arrange or build something recursively structured — where the subparts have the same pattern as the whole.
+// Cn = C0 * Cn-1 + C1 * Cn-2 + ..... + Cn-1 * C0
+
 public class Catalans_Number {
     public static void main(String[] args) {
-        int n = 6;
+        int n = 3;
         //Using Recursion
         System.out.println("Using Recursion: " + findCatalanRecursion(n));
 
