@@ -1,4 +1,3 @@
-package Binary_Search_Tree;
 
 public class ClosestinBST {
     static class Node {
