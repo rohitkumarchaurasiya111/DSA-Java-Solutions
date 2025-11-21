@@ -1,4 +1,3 @@
-package Binary_Search_Tree;
 //Two Sum BSTS
 
 import java.util.Stack;

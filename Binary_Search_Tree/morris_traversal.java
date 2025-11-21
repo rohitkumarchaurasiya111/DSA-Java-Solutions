@@ -1,4 +1,3 @@
-package Binary_Search_Tree;
 //Morris Traversal
 
 //T.C = O(n)

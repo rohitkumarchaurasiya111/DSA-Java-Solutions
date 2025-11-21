@@ -1,4 +1,3 @@
-package Binary_Search_Tree;
 
 //Maximum Sum BST in Binary Tree
 

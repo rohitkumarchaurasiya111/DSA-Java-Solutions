@@ -1,4 +1,3 @@
-package Binary_Search_Tree;
 
 public class SortedArray_To_BalancedBST {
     static class Node {
