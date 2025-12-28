@@ -33,6 +33,7 @@ public class Disjoint_Set_DS {
         int parentY = find(y);
         if (rank[parentX] == rank[parentY]) {
             parent[parentY] = parentX;
+            rank[parentX]++;
         } else if (rank[parentX] > rank[parentY])
             parent[parentY] = parentX;
         else
