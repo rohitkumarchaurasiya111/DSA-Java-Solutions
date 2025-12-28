@@ -1,7 +1,6 @@
 package Array;
 
 //Leetcode - 31, Next Permutation
-import java.util.*;
 
 public class NextPermutationProblem {
     public static void main(String[] args) {
