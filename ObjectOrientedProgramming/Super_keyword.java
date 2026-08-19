@@ -7,15 +7,15 @@ public class Super_keyword {
     }
 }
 
-class Animals {
+class Animal {
     String colour;
 
-    Animals() {
+    Animal() {
         System.out.println("Animal constructor is called");
     }
 }
 
-class Bird extends Animals {
+class Bird extends Animal {
     Bird() {
         super(); // IN java even if we don't write this but still it is called automatically
         System.out.println("Bird Constructor is called");
